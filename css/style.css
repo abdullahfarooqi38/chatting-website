@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
   text-wrap: wrap;
-  transition: all 0.3s;
 }
 
 *,
@@ -839,9 +838,8 @@ footer hr {
     display: none;
   }
 
-  .footer-links ul {
-    gap: 25px;
-    font-size: 13px;
+  .orders-section {
+    gap: 50px;
   }
 
   .orders-count-1 h2 {
@@ -854,5 +852,10 @@ footer hr {
   .orders-count-1,
   .orders-count-2 {
     gap: 4px;
+  }
+
+  .footer-links ul {
+    gap: 25px;
+    font-size: 13px;
   }
 }
