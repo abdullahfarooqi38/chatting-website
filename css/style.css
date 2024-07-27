@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
   text-wrap: wrap;
+  transition: all 0.3s;
 }
 
 *,
@@ -25,7 +26,7 @@
   margin-block: 20px;
 }
 
-/* navbar start */
+/* navbar */
 
 .header {
   display: flex;
@@ -72,6 +73,7 @@
 }
 
 .secondary-btn {
+  border: 1px solid #fb8e0b;
   background: #fb8e0b;
   border-radius: 8px;
   padding: 15px 30px;
@@ -90,9 +92,7 @@
   display: none;
 }
 
-/* navbar end */
-
-/*main sectin start*/
+/*main sectin */
 
 .main-section {
   min-height: 700px;
@@ -148,13 +148,15 @@
   gap: 15px;
 }
 
+.customers-rating-text h3 {
+  font-size: 20px;
+}
+
 .customers-ratings p {
   font-size: 13px;
 }
 
 .customers-rating-images {
-  margin-right: 10px;
-  margin-top: 10px;
   min-width: 105px;
 }
 
@@ -189,8 +191,6 @@
   width: 2px;
   height: 33px;
   background: #1b1c20;
-  margin-top: 12px;
-  margin-right: 10px;
 }
 
 .reviews {
@@ -208,9 +208,8 @@
   color: #ced5db;
   margin-right: 10px;
 }
-/*main sectin end*/
 
-/* features section start */
+/* features section */
 .features {
   text-align: center;
   margin-bottom: 100px;
@@ -223,13 +222,14 @@
 
 .features-box {
   display: flex;
+  gap: 20px;
+  flex: 1;
 }
 
 .video-messaging {
   display: flex;
   gap: 10px;
   text-align: left;
-  margin-right: 30px;
 }
 
 .video-messaging-text h3 {
@@ -257,7 +257,6 @@
   display: flex;
   gap: 20px;
   text-align: left;
-  margin-right: 30px;
 }
 
 .save-time-text h3 {
@@ -300,9 +299,7 @@
   align-items: center;
 }
 
-/* features section end */
-
-/* video call section start */
+/* video call section */
 .video-call {
   background: #f8f8fa;
   display: flex;
@@ -337,9 +334,8 @@
   color: #676972;
   font-size: 14px;
 }
-/* video call section end */
 
-/* selling section start */
+/* selling section*/
 .selling-section {
   margin-block: 100px;
   display: flex;
@@ -374,9 +370,8 @@
   max-width: 100%;
   height: auto;
 }
-/* selling section end */
 
-/* order section start */
+/* order section */
 .orders-section {
   display: flex;
   align-items: center;
@@ -433,9 +428,7 @@
   flex: 1;
 }
 
-/* order section end */
-
-/* review section start */
+/* review section */
 .reviews-section {
   background: #fb8e0b;
   padding-block: 60px;
@@ -545,9 +538,7 @@
   font-size: 12px;
 }
 
-/* review section end */
-
-/* deal section start */
+/* deal section */
 .deal-section {
   padding-block: 60px;
   text-align: center;
@@ -564,24 +555,26 @@
 
 .deal-section .secondary-btn {
   text-decoration: none;
-  margin-top: 100px;
+  display: inline-block;
+  margin-bottom: 50px;
+  border: 1px solid #fb8e0b;
 }
-/* deal section end */
-/* footer start  */
-footer {
-  margin-top: 50px;
-}
+/* footer */
 .footer-main {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-links ul {
   display: flex;
   gap: 55px;
   list-style: none;
-  margin-top: 10px;
   font-weight: bold;
+}
+
+.footer-links li {
+  cursor: pointer;
 }
 
 .footer-socials img {
@@ -592,6 +585,7 @@ footer {
 .footer-socials {
   display: flex;
   gap: 30px;
+  cursor: pointer;
 }
 
 .twitter {
@@ -622,7 +616,6 @@ footer hr {
 .footer-a {
   padding-right: 30px;
 }
-/* footer end  */
 /*  */
 /*  */
 /*  */
@@ -690,7 +683,6 @@ footer hr {
   .keep-safe {
     display: block;
     text-align: center;
-    margin-right: 30px;
   }
 
   .keep-safe-img {
@@ -710,6 +702,11 @@ footer hr {
 
   .video-call-text {
     margin-bottom: 40px;
+  }
+
+  .video-call-img img {
+    padding-block: 0;
+    padding-bottom: 50px;
   }
 
   .selling-section {
@@ -782,6 +779,10 @@ footer hr {
     width: 90%;
   }
 
+  .hamburger {
+    margin-right: 30px;
+  }
+
   .main-section-text h1 {
     font-size: 30px;
   }
@@ -814,6 +815,10 @@ footer hr {
   .selling-section-text p {
     font-size: 14px;
   }
+
+  .reviews-cards {
+    gap: 60px;
+  }
 }
 
 @media only screen and (max-width: 510px) {
@@ -822,7 +827,6 @@ footer hr {
     flex-direction: column;
     justify-content: left;
     gap: 30px;
-    align-items: center;
   }
 
   .customers-rating-text {
@@ -837,39 +841,18 @@ footer hr {
 
   .footer-links ul {
     gap: 25px;
+    font-size: 13px;
   }
 
   .orders-count-1 h2 {
     font-size: 25px;
   }
-  .orders-count-1 p {
-    font-size: 15px;
-  }
   .orders-count-2 h2 {
     font-size: 25px;
   }
 
-  .orders-count-2 p {
-    font-size: 15px;
-  }
-
   .orders-count-1,
   .orders-count-2 {
-    gap: 4px; /* Adjust gap for smaller screens */
+    gap: 4px;
   }
 }
-/* xfdsfsdffffffffffffffffffffffffffff */
-@media (max-width: 768px) {
-  .orders-section-margin-p,
-  .orders-section-width-p {
-    font-size: 0.875rem; /* Reduce font size for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .orders-section-margin-p,
-  .orders-section-width-p {
-    font-size: 0.75rem; /* Further reduce font size for very small screens */
-  }
-}
-/* sdfffffffffffffffffffffffffffffffffff */
