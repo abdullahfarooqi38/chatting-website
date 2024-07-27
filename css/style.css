@@ -113,7 +113,7 @@
 
 .main-section-img img {
   height: 75%;
-  max-width: 100%;
+  max-width: 120%;
   object-fit: contain;
 }
 
@@ -322,21 +322,18 @@
 }
 
 .video-call-text h2 {
-  width: 70%;
   font-size: 35px;
   margin-bottom: 40px;
   color: #1b1c20;
 }
 
 .video-p-bold {
-  max-width: 70%;
   color: #3e404c;
   margin-bottom: 20px;
   font-weight: 500;
 }
 
 .video-call-p-normal {
-  width: 70%;
   color: #676972;
   font-size: 14px;
 }
@@ -357,14 +354,12 @@
 }
 
 .selling-section-text h2 {
-  max-width: 90%;
   font-size: 40px;
   color: #1b1c20;
   margin-bottom: 30px;
 }
 
 .selling-section-text p {
-  max-width: 90%;
   color: #565862;
   line-height: 25px;
   font-weight: 400;
@@ -387,7 +382,7 @@
   align-items: center;
   gap: 100px;
   background: #f8f8fa;
-  padding-block: 100px;
+  padding-block: 40px;
 }
 
 .orders-section-img {
@@ -418,29 +413,26 @@
 .orders-section-p {
   margin-bottom: 50px;
 }
-
 .orders-count {
   display: flex;
-  gap: 20px;
+  gap: 32px;
+  overflow: hidden;
 }
 
-.orders-count-1 {
-  display: flex;
-  gap: 20px;
-}
+.orders-count-1,
 .orders-count-2 {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
 }
 
-.orders-section-margin-p {
-  max-width: 16%;
-}
-
+.orders-section-margin-p,
 .orders-section-width-p {
-  max-width: 40%;
-  min-width: 74px;
+  font-size: 1rem;
+  flex: 1;
 }
+
 /* order section end */
 
 /* review section start */
@@ -517,7 +509,7 @@
   display: flex;
   gap: 20px;
   line-height: 25px;
-  padding-left: 25%;
+  justify-content: center;
 }
 
 .name-1 img {
@@ -532,7 +524,7 @@
   display: flex;
   gap: 20px;
   line-height: 25px;
-  padding-left: 25%;
+  justify-content: center;
 }
 
 .name-2 img {
@@ -562,7 +554,7 @@
 }
 
 .deal-section h2 {
-  font-size: 42px;
+  font-size: 36px;
   color: #1b1c20;
 }
 
@@ -749,10 +741,6 @@ footer hr {
     font-size: 14px;
   }
 
-  .orders-count {
-    flex-wrap: wrap;
-  }
-
   .reviews-cards {
     display: flex;
     flex-direction: column;
@@ -791,7 +779,7 @@ footer hr {
 /* Mobile size - Breakpoint */
 @media only screen and (max-width: 800px) {
   .container {
-    width: 95%;
+    width: 90%;
   }
 
   .main-section-text h1 {
@@ -833,8 +821,8 @@ footer hr {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: left;
     gap: 30px;
+    align-items: center;
   }
 
   .customers-rating-text {
@@ -850,4 +838,38 @@ footer hr {
   .footer-links ul {
     gap: 25px;
   }
+
+  .orders-count-1 h2 {
+    font-size: 25px;
+  }
+  .orders-count-1 p {
+    font-size: 15px;
+  }
+  .orders-count-2 h2 {
+    font-size: 25px;
+  }
+
+  .orders-count-2 p {
+    font-size: 15px;
+  }
+
+  .orders-count-1,
+  .orders-count-2 {
+    gap: 4px; /* Adjust gap for smaller screens */
+  }
 }
+/* xfdsfsdffffffffffffffffffffffffffff */
+@media (max-width: 768px) {
+  .orders-section-margin-p,
+  .orders-section-width-p {
+    font-size: 0.875rem; /* Reduce font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .orders-section-margin-p,
+  .orders-section-width-p {
+    font-size: 0.75rem; /* Further reduce font size for very small screens */
+  }
+}
+/* sdfffffffffffffffffffffffffffffffffff */
