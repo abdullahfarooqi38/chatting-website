@@ -12,6 +12,10 @@
   /* outline: 2px solid red; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
